@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>Uma simples documentação da API</h1>
+            <p>Isso é parte integrante da disciplina Programação Web com NojeJS</p>
+
+            <h2>Endpoints</h2>
+            <h5>V1 - List Example</h5>
+            <p>Base URL: https://productapiv2.hygorluz.repl.co/v1</p>
+            <h5>V2 - DB Example</h5>
+            <p>Base URL: https://productapiv2.hygorluz.repl.co/v2</p>
+            <ul>
+                <li>
+                    <strong><label style="color:MediumSeaGreen;">GET </label><label style="margin-left: 4px;">
+                            /produtos</label></strong>
+                    <p>Endpoint responsavel por retornar uma lista de produtos</p>
+                </li>
+                <li>
+                    <strong><label style="color:MediumSeaGreen;">GET </label><label style="margin-left: 4px;">
+                            /produtos/<em>{id}</em></label></strong>
+                    <p>Endpoint responsavel por retornar um produtos com base no ID</p>
+                </li>
+                <li>
+                    <strong><label style="color:SlateBlue;">POST </label><label style="margin-left: 4px;">
+                            /produtos</label></strong>
+                    <p>Endpoint responsavel por criar um produtos</p>
+                    <p style="margin-bottom: 0px;">Parametros validos:</p>
+                    <ul style="margin-top: 0px; margin-bottom: 8px;">
+                        <li>valor: Obrigatorio</li>
+                        <li>marca: Obrigatorio</li>
+                        <li>descricao: Opcional</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong><label style="color:Orange;">PUT </label><label style="margin-left: 4px;">
+                            /produtos/<em>{id}</em></label></strong>
+                    <p>Endpoint responsavel por atualizar um produto com base no ID</p>
+                    <p style="margin-bottom: 0px;">Parametros validos:</p>
+                    <ul style="margin-top: 0px; margin-bottom: 8px;">
+                        <li>valor: Obrigatorio</li>
+                        <li>marca: Obrigatorio</li>
+                        <li>descricao: Opcional</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong><label style="color:Tomato;">DELETE </label><label style="margin-left: 4px;">
+                            /produtos/<em>{id}</em></label></strong>
+                    <p>Endpoint responsavel por deletar um produto com base no ID</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('./partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>
